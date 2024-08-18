@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-18T13:52:31" hostname="dracarys" time="0.48">
+  <properties/>
+  <testcase name="testMultipleConsumer()" classname="com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest" time="0.48"/>
+  <system-out><![CDATA[19:22:29.337 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest]: MultipleConsumerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:22:29.402 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.transaction_aggregator.transaction_aggregator.MessageBroker for test class com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-18T19:22:29.632+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : Starting MultipleConsumerTest using Java 17.0.12 with PID 85143 (started by shantanu in /home/shantanu/Downloads/transaction-aggregator/transaction-aggregator)
+2024-08-18T19:22:29.634+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : No active profile set, falling back to 1 default profile: "default"
+2024-08-18T19:22:30.795+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2024-08-18T19:22:30.904+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {Query=[TransactionById]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Skipped types: []
+2024-08-18T19:22:30.919+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2024-08-18T19:22:31.099+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-18T19:22:31.140+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : Started MultipleConsumerTest in 1.66 seconds (process running for 2.292)
+2024-08-18T19:22:31.146+05:30  INFO 85143 --- [transaction-aggregator] [   scheduling-1] c.e.t.t.services.MessageQueueService     : Removed expired messages
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [pool-3-thread-2] c.e.t.t.services.MultipleConsumerTest    : Consumed message
+2024-08-18T19:22:31.649+05:30  INFO 85143 --- [transaction-aggregator] [pool-3-thread-1] c.e.t.t.services.MultipleConsumerTest    : Consumed message
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [         task-3] c.e.t.t.services.MessageConsumerService  : Message consumed
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [         task-2] c.e.t.t.services.MessageConsumerService  : Message consumed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

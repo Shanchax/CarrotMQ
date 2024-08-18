@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MultipleConsumerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MultipleConsumerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.transaction_aggregator.transaction_aggregator.services.html">com.example.transaction_aggregator.transaction_aggregator.services</a> &gt; MultipleConsumerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.480s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testMultipleConsumer()</td>
+<td class="success">0.480s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:22:29.337 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest]: MultipleConsumerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:22:29.402 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.transaction_aggregator.transaction_aggregator.MessageBroker for test class com.example.transaction_aggregator.transaction_aggregator.services.MultipleConsumerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-18T19:22:29.632+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : Starting MultipleConsumerTest using Java 17.0.12 with PID 85143 (started by shantanu in /home/shantanu/Downloads/transaction-aggregator/transaction-aggregator)
+2024-08-18T19:22:29.634+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-08-18T19:22:30.795+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2024-08-18T19:22:30.904+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {Query=[TransactionById]}
+	Unmapped registrations: {}
+	Unmapped arguments: {}
+	Skipped types: []
+2024-08-18T19:22:30.919+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2024-08-18T19:22:31.099+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-18T19:22:31.140+05:30  INFO 85143 --- [transaction-aggregator] [    Test worker] c.e.t.t.services.MultipleConsumerTest    : Started MultipleConsumerTest in 1.66 seconds (process running for 2.292)
+2024-08-18T19:22:31.146+05:30  INFO 85143 --- [transaction-aggregator] [   scheduling-1] c.e.t.t.services.MessageQueueService     : Removed expired messages
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [pool-3-thread-2] c.e.t.t.services.MultipleConsumerTest    : Consumed message
+2024-08-18T19:22:31.649+05:30  INFO 85143 --- [transaction-aggregator] [pool-3-thread-1] c.e.t.t.services.MultipleConsumerTest    : Consumed message
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [         task-3] c.e.t.t.services.MessageConsumerService  : Message consumed
+2024-08-18T19:22:31.650+05:30  INFO 85143 --- [transaction-aggregator] [         task-2] c.e.t.t.services.MessageConsumerService  : Message consumed
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 18-Aug-2024, 7:22:31 pm</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+type Query {
+    TransactionById(id: ID): Transaction
+}
+
+type Transaction {
+    TransactionId: ID
+    Amount: Int
+}
+
+#type Merchant {
+#    id: ID
+#    firstName: String
+#    lastName: String
+#}

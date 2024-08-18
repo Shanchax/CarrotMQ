@@ -1,0 +1,40 @@
+GET http://localhost:8080/actuator
+Accept: application/vnd.spring-boot.actuator.v3+json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-18T125334.200.json
+
+###
+
+POST http://localhost:8080/publish
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-18T125313.400.json
+
+###
+
+GET http://localhost:8080/actuator
+Accept: application/vnd.spring-boot.actuator.v3+json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-18T124651.200.json
+
+###
+
+GET http://localhost:8080/actuator
+Accept: application/vnd.spring-boot.actuator.v3+json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-18T124548.200.json
+
+###
+

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-08-18T07:23:13.478+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/publish"
+}
